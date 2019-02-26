@@ -1,0 +1,354 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* Border Box */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Positioning */
+.logo, .student-info {
+	display: block;
+	margin: 0 auto;
+}
+
+/* Logo */
+.logo {
+	margin-top: 2.5rem;
+	margin-bottom: 1.5rem;
+}
+
+/* 404 Error */
+.error {
+	border-top: 1px solid rgba(0,0,0,.1);
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	width: 32rem;
+	margin: 0 auto;
+	margin-top: 2rem;
+	text-align: center;
+	padding: 2rem 0;
+	display: none;
+}
+
+.error h3, .error h5, .error p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+.error h3 {
+	color: #757575;
+	font-size: 1.5rem;
+}
+.error h5 {
+	color: #F37A39;
+	margin: 1rem 0;
+	font-size: 1rem;
+}
+.error p {
+	font-size: 0.8rem;
+}
+
+/* Media Queries */
+
+
+@media (max-width: 768px) {
+	.error {
+		width: 21rem;
+	}
+	.error h5 {
+		margin: 0.8rem 0;
+	}
+	.logo {
+		width: 22rem;
+	}
+}
+
+/* Ajax-Loading */
+.wrapper {
+	padding-left: 1em;
+	padding-right: 1em;
+	margin: auto;
+	display: block;
+	width: 195px;
+}
+
+.cssload-loader {
+	width: 49px;
+	height: 49px;
+	border-radius: 50%;
+	margin: 3em;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+}
+.cssload-loader {
+	width: 49px;
+	height: 49px;
+	border-radius: 50%;
+	margin: 3em;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+}
+.cssload-loader,
+.cssload-loader:before,
+.cssload-loader:after {
+	animation: 0.55s infinite ease-in-out;
+		-o-animation: 0.55s infinite ease-in-out;
+		-ms-animation: 0.55s infinite ease-in-out;
+		-webkit-animation: 0.55s infinite ease-in-out;
+		-moz-animation: 0.55s infinite ease-in-out;
+}
+.cssload-loader:before,
+.cssload-loader:after {
+	width: 100%; 
+	height: 100%;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.cssload-loader:before,
+.cssload-loader:after {
+		content: "";
+}
+.cssload-loader {
+		background-color: white;
+		animation: cssload-flower-fan 0.22s infinite linear;
+		-o-animation: cssload-flower-fan 0.22s infinite linear;
+		-ms-animation: cssload-flower-fan 0.22s infinite linear;
+		-webkit-animation: cssload-flower-fan 0.22s infinite linear;
+		-moz-animation: cssload-flower-fan 0.22s infinite linear;
+}
+.cssload-loader:before{
+	content: "";
+	width: 80%;
+	height: 80%;
+	background-color: white;
+	top: 10%;
+	left: 10%;
+	box-shadow: 5px -3px 0 rgba(255,100,100,0.72),
+				5px 5px 0 rgba(248,191,59,0.7),
+				-3px 5px 0 rgba(239,73,54,0.7),
+				-5px -5px 0 rgba(240,240,120,0.7);
+		-o-box-shadow: 5px -3px 0 rgba(255,100,100,0.72),
+				5px 5px 0 rgba(248,191,59,0.7),
+				-3px 5px 0 rgba(239,73,54,0.7),
+				-5px -5px 0 rgba(240,240,120,0.7);
+		-ms-box-shadow: 5px -3px 0 rgba(255,100,100,0.72),
+				5px 5px 0 rgba(248,191,59,0.7),
+				-3px 5px 0 rgba(239,73,54,0.7),
+				-5px -5px 0 rgba(240,240,120,0.7);
+		-webkit-box-shadow: 5px -3px 0 rgba(255,100,100,0.72),
+				5px 5px 0 rgba(248,191,59,0.7),
+				-3px 5px 0 rgba(239,73,54,0.7),
+				-5px -5px 0 rgba(240,240,120,0.7);
+		-moz-box-shadow: 5px -3px 0 rgba(255,100,100,0.72),
+				5px 5px 0 rgba(248,191,59,0.7),
+				-3px 5px 0 rgba(239,73,54,0.7),
+				-5px -5px 0 rgba(240,240,120,0.7);
+}
+.cssload-loader:after{
+	content: "";
+	border: 3px solid white;
+	z-index: 2;
+	top: -3px;
+	left: -3px;
+}
+@keyframes cssload-flower-fan {
+	0%	 { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+@-o-keyframes cssload-flower-fan {
+	0%	 { -o-transform: rotate(0deg); }
+	100% { -o-transform: rotate(360deg); }
+}
+@-ms-keyframes cssload-flower-fan {
+	0%	 { -ms-transform: rotate(0deg); }
+	100% { -ms-transform: rotate(360deg); }
+}
+@-webkit-keyframes cssload-flower-fan {
+	0%	 { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes cssload-flower-fan {
+	0%	 { -moz-transform: rotate(0deg); }
+	100% { -moz-transform: rotate(360deg); }
+}
+
+/* Animation */
+.logo, .searchwrapper {
+	-webkit-animation-duration: 0.65s;
+	-moz-animation-duration: 0.65s;
+ 	-o-animation-duration: 0.65s;
+  	animation-duration: 0.65s;
+}
+.error, .student-info {
+	-webkit-animation-duration: 0.35s;
+	-moz-animation-duration: 0.35s;
+ 	-o-animation-duration: 0.35s;
+  	animation-duration: 0.35s;
+}
+
+/* Search */
+.searchwrapper {
+	text-align: center;
+}
+.error p, a,input[name="search"], input[name="search"]:focus {
+	color: #A0A0A0;
+}
+input[name="search"] {
+	outline: none;
+	border: 1px solid #EEE;
+	padding: 0.7rem 0 0.7rem 3rem;
+	width: 22rem;
+	border-radius: 30px;
+	font: 400 1rem 'Open Sans', sans-serif;
+	background: #fff url(../img/search.png) no-repeat 1rem;
+}
+
+/* Student Info (Card Design) */
+.student-info {
+	width: 22rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	border-radius: 8px;
+	background-color: #F8F8F8;
+	box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.20);
+	display: none;
+}
+
+/* Detailed Content */
+.more-details {
+	padding: 0.8rem 1.25rem;
+}
+.title {
+	color: #B8B8B8;
+	font: 400 0.75rem 'Open Sans', sans-serif;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 0.3rem;
+}
+.content {
+	display: block;
+	font: 600 1rem 'Open Sans', sans-serif;
+	color: #757575;
+}
+
+.department .content, .campus .content, .email .content {
+	margin-bottom: 0.625rem;
+}
+.affiliation, .level, .class {
+	display: inline-block;
+	margin-right: 0.94rem;
+} 
+.affiliation .content, .level .content, .class .content {
+	margin-bottom: 0.25rem;
+}
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 0.25px 0px 0px #FFFFFF;
+}
+
+/* name */
+.fullname, .username, .circle, .name {
+	font-family: 'Open Sans', sans-serif;
+}
+.fullname, .username, .circle {
+	text-align: center;
+}
+.fullname {
+	font-weight: 700;
+	font-size: 1.25rem;
+	color: rgba(0,0,0,.6);
+	margin-bottom: 0.25rem;
+}
+.username {
+	font-weight: 600;
+	font-size: 1rem;
+	color: rgba(0,0,0,.4);
+	display: block;
+}
+.circle {
+	height: 4.3rem;
+	width: 4.3rem;
+	background: #F8F8F8;
+	border: 2px solid #FFFFFF;
+	box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.40), inset 0px 1px 1px 0px rgba(0,0,0,0.20);
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-bottom: 0.625rem;
+	vertical-align: middle;
+	line-height: 4.3rem;
+	font-weight: 400;
+	font-size: 1.5rem;
+	color: #F37A39;
+}
+.name {
+	border-radius: 8px 8px 0px 0px;
+	padding: 1.25rem;
+	background: #F37A39;
+    background: -webkit-linear-gradient(left top, #F7B33B 0%, #F26838 100%);
+    background: -o-linear-gradient(bottom right, #F7B33B 0%, #F26838 100%;
+    background: -moz-linear-gradient(bottom right, #F7B33B 0%, #F26838 100%);
+	background: linear-gradient(to bottom right, #F7B33B 0%, #F26838 100%);
+}
+
+
+
+
+
+

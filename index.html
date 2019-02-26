@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta charset="utf-8"/>
+		<link rel="icon" type="image/png" href="img/favicon.png">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/index.css">
+		<title>CMU Directory</title>
+	</head>
+	<body>
+		<img class="animated bounceInDown logo" src="img/logo.png" alt="A logo for CMU Directory">
+		<div class="animated bounceInDown searchwrapper">
+			<input type="text" name="search" id="searchID" placeholder="Enter an Andrew User ID (ie. wcsong)">
+		</div>
+		<div class="loading">
+			<div class="loading-bar"></div>
+		</div>	
+		<div class="error">
+			<h3>User ID Not Found</h3>
+			<h5>Sorry, but the user id that you were looking for could not be found.</h5>
+			<p><a href="mailto:williamcsong@gmail.com">Drop me a line</a> if you have any questions.</p>
+		</div>
+		<div class="student-info">
+			<div class="name">
+				<div class="circle"></div>
+				<h2 class="fullname"></h4>
+				<span class="username"></span>
+			</div>
+			<section class="more-details">
+				<div class="info department">
+					<strong class="title">Department</strong>
+					<span class="content"></span>
+				</div>
+				<hr>
+				<div class="info affiliation">
+					<strong class="title">Affiliation</strong>
+					<span class="content"></span>
+				</div>
+				<div class="info level">
+					<strong class="title">Level</strong>
+					<span class="content"></span>
+				</div>
+				<div class="info class">
+					<strong class="title">Class</strong>
+					<span class="content"></span>
+				</div>
+				<hr>
+				<div class="info campus">
+					<strong class="title">Campus</strong>
+					<span class="content"></span>
+				</div>
+				<hr>
+				<div class="info email">
+					<strong class="title">Email</strong>
+					<span class="content"></span>
+				</div>
+			</section>
+		</div>
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
