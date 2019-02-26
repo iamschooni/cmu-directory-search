@@ -1,6 +1,6 @@
 ;(function() {
 	$(document).ready(function() {
-		var directoryAPI = 'http://apis.scottylabs.org/directory/v1/andrewID/';
+		var directoryAPI = 'https://apis.scottylabs.org/directory/v1/andrewID/';
 		var $searchField =  $('#searchID');
 		$searchField.focus();
 		$searchField.keypress(function(e) {
